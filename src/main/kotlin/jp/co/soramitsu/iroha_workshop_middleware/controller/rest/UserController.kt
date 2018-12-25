@@ -36,7 +36,7 @@ class UserController {
 
     @RequestMapping(value = ["/users/{userId}/balance"], method = [(RequestMethod.GET)])
     fun getUserBalance(@PathVariable("userId") userId: String): UserBalanceData {
-        return UserBalanceData(User.getUser(userId).getTotalBalance())
+        return UserBalanceData(User.getUser(userId).getTotalBalance().toString())
     }
 
     @RequestMapping(value = ["/users/{userId}/balance"], method = [(RequestMethod.POST)])

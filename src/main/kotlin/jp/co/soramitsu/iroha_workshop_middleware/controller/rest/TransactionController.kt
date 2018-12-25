@@ -22,7 +22,7 @@ class TransactionController {
 
         var transaction: Transaction
         val user = User.getUser(transactionData.sourceAccountId)
-        if (user.getTotalBalance() < transactionData.amount) {
+        if (user.getTotalBalance() < transactionData.amount.toDouble()) {
             return InsertionResponse("Error, not enough money on source user (${transactionData.sourceAccountId}) account", id.toString())
         } else {
             transaction = Transaction(transactionData)

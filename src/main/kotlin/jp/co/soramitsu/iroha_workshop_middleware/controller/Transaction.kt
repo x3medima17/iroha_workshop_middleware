@@ -9,6 +9,6 @@ class Transaction (val data: TransactionData) {
     private val facade = TransactionIrohaFacade()
 
     fun confirmTransaction() {
-        facade.sendAsset(data.sourceAccountId, data.destinationAccountId, data.currency, data.amount)
+        facade.sendAsset(data.sourceAccountId, data.destinationAccountId, data.currency, data.amount.toDouble())
     }
 }
