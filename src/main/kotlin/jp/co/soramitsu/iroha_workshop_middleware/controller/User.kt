@@ -22,7 +22,7 @@ class User {
     constructor(data: UserData): this(data.name)
 
     fun getTotalBalance(): Double {
-        var totalBalance = irohaFacade.getTotalBalance()
+        val totalBalance = irohaFacade.getTotalBalance()
         return totalBalance.toDouble()
     }
 

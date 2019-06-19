@@ -28,7 +28,7 @@ open class IrohaFacade {
     }
 
     protected fun addAsset(account: String, asset: String, amount: Double) {
-        // TODO: Please, implement this method throw HttpServerErrorException(HttpStatus.NOT_IMPLEMENTED, "Method is not implemented yet")
+        // TODO: Please, implement this method
     }
 
     protected fun createAccount(newAccountName: String, domainId: String, newUserKeypair: KeyPair) {
