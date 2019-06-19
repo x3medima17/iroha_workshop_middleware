@@ -9,7 +9,6 @@ import org.springframework.web.client.HttpServerErrorException
 @RestController
 class UserController {
     constructor() {
-//        System.load("/Users/vr/Work/Visa-Everywhere/Source/vaioh-backend/libirohajava.jnilib")
     }
 
     @RequestMapping("/users", method = [(RequestMethod.GET)])
